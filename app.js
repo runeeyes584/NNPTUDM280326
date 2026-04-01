@@ -30,6 +30,7 @@ app.use('/api/v1/categories', require('./routes/categories'))
 app.use('/api/v1/auth', require('./routes/auth'))
 app.use('/api/v1/carts', require('./routes/cart'))
 app.use('/api/v1/upload', require('./routes/upload'))
+app.use('/api/v1/messages', require('./routes/messages'))
 
 const mongoUri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/NNPTUD-C4';
 mongoose.connect(mongoUri).catch(function (error) {
